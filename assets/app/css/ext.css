@@ -1,9 +1,26 @@
 .snbox {
 	margin:0 auto;
-	width: 250px;
+	width: 500px;
 	padding:20px;
 	height:270px;
 	background-color:#f3f3f3;
+}
+
+#curr_id
+{
+
+	display: inline;
+}
+#curr_to_id
+{
+
+	display: inline;
+}
+
+#c_val
+{
+
+	display: inline;
 }
 
 .pad {
