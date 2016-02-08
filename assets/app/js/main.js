@@ -3,8 +3,6 @@ var template = Handlebars.compile(source);
 
 
 
-
-
 $(document).ready(function(){ $.ajax({
     async: true,
     crossDomain: true,
@@ -31,9 +29,17 @@ var html    = template(context);
       }
       console.log(html);
 
-$('#curr_id').html("<select>"+s+"</select>");
-$('#curr_to_id').html("<select>"+s+"</select>");
+$('#curr_id').html("<select id='s1'>"+s+"</select>");
+$('#curr_to_id').html("<select id='s2'>"+s+"</select>");
      // console.log(JSON.stringify(data));
+
+
+ $('#s1').selectr();
+
+
+  $('#s2').selectr();
+
+
     },
     error: function (err) {
       console.log(err);
@@ -59,8 +65,10 @@ $.ajax({
     data: {},
     dataType: 'json',
     success: function (data) {
-$('#val').html(JSON.stringify(data));
-      console.log(data);
+
+$('#val').html(JSON.stringify(data['to_amount']));
+      console.log(data['to_amount']);
+
 
 var abc=$("#curr_id option:selected").val();
 

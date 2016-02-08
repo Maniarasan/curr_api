@@ -6,20 +6,25 @@
 	background-color:#f3f3f3;
 }
 
-#curr_id
+#i
 {
 
 	display: inline;
 }
+#curr_id
+{
+margin:0 auto;
+	display: inline;
+}
 #curr_to_id
 {
-
+margin:0 auto;
 	display: inline;
 }
 
 #c_val
 {
-
+margin:0 auto;
 	display: inline;
 }
 
